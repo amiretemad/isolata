@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait BusinessIdTrait
+ * @package Isolta\OpenData\Traits
  */
 trait BusinessIdTrait
 {
@@ -24,7 +24,7 @@ trait BusinessIdTrait
     }
 
     /**
-     * @param string $businessId
+     * @param string|null $businessId
      * @return $this
      */
     public function setBusinessId(?string $businessId): self

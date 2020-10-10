@@ -5,7 +5,7 @@ namespace Isolta\OpenData\Traits;
 
 /**
  * Trait StatusTrait
- * @package Isolta\OpenData\Response\Traits
+ * @package Isolta\OpenData\Traits
  */
 trait StatusTrait
 {
@@ -24,7 +24,7 @@ trait StatusTrait
     }
 
     /**
-     * @param int $status
+     * @param int|null $status
      * @return $this
      */
     public function setStatus(?int $status): self

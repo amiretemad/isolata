@@ -3,10 +3,9 @@
 
 namespace Isolta\OpenData\Traits;
 
-
 /**
- * Trait
- * @package Isolta\OpenData\Response\Traits
+ * Trait PostCodeTrait
+ * @package Isolta\OpenData\Traits
  */
 trait PostCodeTrait
 {
@@ -25,12 +24,13 @@ trait PostCodeTrait
     }
 
     /**
-     * @param string $postCode
+     * @param string|null $postCode
      * @return $this
      */
-    public function setPostCode(?string $postCode) : self
+    public function setPostCode(?string $postCode): self
     {
         $this->postCode = $postCode;
+
         return $this;
     }
 

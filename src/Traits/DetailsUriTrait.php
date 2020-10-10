@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait DetailsUriTrait
+ * @package Isolta\OpenData\Traits
  */
 trait DetailsUriTrait
 {
@@ -24,7 +24,7 @@ trait DetailsUriTrait
     }
 
     /**
-     * @param string $detailsUri
+     * @param string|null $detailsUri
      * @return $this
      */
     public function setDetailsUri(?string $detailsUri): self

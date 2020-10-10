@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait NameTrait
+ * @package Isolta\OpenData\Traits
  */
 trait NameTrait
 {
@@ -24,7 +24,7 @@ trait NameTrait
     }
 
     /**
-     * @param string $name
+     * @param string|null $name
      * @return $this
      */
     public function setName(?string $name): self

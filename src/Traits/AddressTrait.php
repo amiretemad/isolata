@@ -3,9 +3,12 @@
 
 namespace Isolta\OpenData\Traits;
 
-
 use Isolta\OpenData\Schema\AddressSchema;
 
+/**
+ * Trait AddressTrait
+ * @package Isolta\OpenData\Traits
+ */
 trait AddressTrait
 {
 

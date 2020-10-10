@@ -6,8 +6,8 @@ namespace Isolta\OpenData\Traits;
 use DateTime;
 
 /**
- * Trait
- * @package Isolta\OpenData\Response\Traits
+ * Trait EndDateTrait
+ * @package Isolta\OpenData\Traits
  */
 trait EndDateTrait
 {

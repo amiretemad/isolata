@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait RegisterTrait
+ * @package Isolta\OpenData\Traits
  */
 trait RegisterTrait
 {
@@ -24,7 +24,7 @@ trait RegisterTrait
     }
 
     /**
-     * @param int $register
+     * @param int|null $register
      * @return $this
      */
     public function setRegister(?int $register): self

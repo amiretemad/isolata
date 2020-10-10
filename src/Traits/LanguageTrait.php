@@ -3,7 +3,10 @@
 
 namespace Isolta\OpenData\Traits;
 
-
+/**
+ * Trait LanguageTrait
+ * @package Isolta\OpenData\Traits
+ */
 trait LanguageTrait
 {
 
@@ -21,7 +24,7 @@ trait LanguageTrait
     }
 
     /**
-     * @param string language
+     * @param string|null $language
      * @return $this
      */
     public function setLanguage(?string $language): self

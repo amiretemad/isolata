@@ -3,7 +3,10 @@
 
 namespace Isolta\OpenData\Traits;
 
-
+/**
+ * Trait ContactDetailTypeTrait
+ * @package Isolta\OpenData\Traits
+ */
 trait ContactDetailTypeTrait
 {
 

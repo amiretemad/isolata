@@ -5,7 +5,7 @@ namespace Isolta\OpenData\Traits;
 
 /**
  * Trait CareOfTrait
- * @package Isolta\OpenData\Response\Traits
+ * @package Isolta\OpenData\Traits
  */
 trait CareOfTrait
 {
@@ -24,7 +24,7 @@ trait CareOfTrait
     }
 
     /**
-     * @param string $careOf
+     * @param string|null $careOf
      * @return $this
      */
     public function setCareOf(?string $careOf): self

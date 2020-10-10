@@ -5,7 +5,7 @@ namespace Isolta\OpenData\Traits;
 
 /**
  * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * @package Isolta\OpenData\Traits
  */
 trait OrderTrait
 {
@@ -24,7 +24,7 @@ trait OrderTrait
     }
 
     /**
-     * @param int $order
+     * @param int|null $order
      * @return $this
      */
     public function setOrder(?int $order): self
