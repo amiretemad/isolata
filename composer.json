@@ -12,6 +12,7 @@
             "email": "amir.etemad@enuygun.com"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
         "larapack/dd": "^1.1",
