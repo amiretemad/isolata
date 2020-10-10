@@ -4,10 +4,7 @@
     "autoload": {
         "psr-4": {
             "Isolta\\OpenData\\" : "src/"
-        },
-        "bootstrap" : [
-            "src/bootstrap.php"
-        ]
+        }
     },
     "authors": [
         {
