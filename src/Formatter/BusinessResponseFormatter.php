@@ -9,7 +9,7 @@ use Isolta\OpenData\Response\Interfaces\ApiResponseInterface;
 use Isolta\OpenData\Schema\AddressSchema;
 use Isolta\OpenData\Schema\BusinessSchema;
 
-class ResultToBusinessFormatter implements ResultFormatterInterface
+class BusinessResponseFormatter implements ResultFormatterInterface
 {
 
     /**

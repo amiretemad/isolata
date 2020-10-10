@@ -13,13 +13,13 @@ use Isolta\OpenData\Exception\JsonParseException;
 use Isolta\OpenData\Schema\BusinessSchema;
 use Isolta\OpenData\Validator\Validation;
 
-class GetCompanyByBusinessIdService
+class BusinessService
 {
 
     protected $resultFormatter;
 
     /**
-     * GetCompanyByBusinessIdService constructor.
+     * BusinessService constructor.
      * @param ResultFormatterInterface $resultFormatter
      */
     public function __construct(ResultFormatterInterface $resultFormatter)
