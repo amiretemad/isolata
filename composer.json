@@ -1,0 +1,27 @@
+{
+    "name": "isolta/opendata",
+    "description": "open deta package",
+    "autoload": {
+        "psr-4": {
+            "Isolta\\OpenData\\" : "src/"
+        },
+        "bootstrap" : [
+            "src/bootstrap.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "amiretemad",
+            "email": "amir.etemad@enuygun.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "larapack/dd": "^1.1",
+        "php-di/php-di": "^6.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    }
+}
