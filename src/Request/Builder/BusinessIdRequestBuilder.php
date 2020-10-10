@@ -2,8 +2,6 @@
 
 namespace Isolta\OpenData\Request\Builder;
 
-
-use Isolta\OpenData\Request\Builder\Interfaces\UriInterface;
 use Isolta\OpenData\Traits\BusinessIdTrait;
 
 class BusinessIdRequestBuilder extends AbstractRequestBuilder

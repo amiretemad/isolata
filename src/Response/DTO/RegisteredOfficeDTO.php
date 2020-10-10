@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Isolta\OpenData\Response\DTO;
 
 use Isolta\OpenData\Traits\AuthorityTrait;
@@ -12,15 +11,7 @@ use Isolta\OpenData\Traits\RegistrationDateTrait;
 use Isolta\OpenData\Traits\StatusDateTrait;
 use Isolta\OpenData\Traits\StatusTrait;
 
-class RegisteredEntryDTO
+class RegisteredOfficeDTO extends NameDTO
 {
-
-    use AuthorityTrait,
-        RegisterTrait,
-        StatusTrait,
-        RegistrationDateTrait,
-        EndDateTrait,
-        StatusDateTrait,
-        LanguageTrait,
-        DescriptionTrait;
+    use LanguageTrait;
 }
