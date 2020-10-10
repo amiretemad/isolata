@@ -3,7 +3,7 @@
 
 namespace Isolta\OpenData\Response\DTO;
 
-use Isolta\OpenData\Response\Traits\LanguageTrait;
+use Isolta\OpenData\Traits\LanguageTrait;
 
 class AuxiliaryNameDTO extends NameDTO
 {

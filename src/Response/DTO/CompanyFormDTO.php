@@ -2,13 +2,13 @@
 
 namespace Isolta\OpenData\Response\DTO;
 
-use Isolta\OpenData\Response\Traits\EndDateTrait;
-use Isolta\OpenData\Response\Traits\LanguageTrait;
-use Isolta\OpenData\Response\Traits\NameTrait;
-use Isolta\OpenData\Response\Traits\RegistrationDateTrait;
-use Isolta\OpenData\Response\Traits\SourceTrait;
-use Isolta\OpenData\Response\Traits\TypeTrait;
-use Isolta\OpenData\Response\Traits\VersionTrait;
+use Isolta\OpenData\Traits\EndDateTrait;
+use Isolta\OpenData\Traits\LanguageTrait;
+use Isolta\OpenData\Traits\NameTrait;
+use Isolta\OpenData\Traits\RegistrationDateTrait;
+use Isolta\OpenData\Traits\SourceTrait;
+use Isolta\OpenData\Traits\TypeTrait;
+use Isolta\OpenData\Traits\VersionTrait;
 
 class CompanyFormDTO
 {

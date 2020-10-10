@@ -12,7 +12,7 @@ use Isolta\OpenData\Response\DTO\ContactDetailDTO;
 use Isolta\OpenData\Response\DTO\LanguagesDTO;
 use Isolta\OpenData\Response\DTO\LiquidationDTO;
 use Isolta\OpenData\Response\DTO\NameDTO;
-use Isolta\OpenData\Response\DTO\RegistedOfficeDTO;
+use Isolta\OpenData\Response\DTO\RegisteredOfficeDTO;
 use Isolta\OpenData\Response\DTO\RegisteredEntryDTO;
 use Isolta\OpenData\Response\Interfaces\ApiResponseInterface;
 use Isolta\OpenData\Schema\AddressSchema;
@@ -44,7 +44,7 @@ class BusinessIdResponse implements ApiResponseInterface
     /**
      * @var AuxiliaryNameDTO[]
      */
-    public $auxiliaryNames = [];  //array( undefined )
+    public $auxiliaryNames = [];
 
     /**
      * @var AddressDTO[]
@@ -54,33 +54,32 @@ class BusinessIdResponse implements ApiResponseInterface
     /**
      * @var CompanyFormDTO[]
      */
-    public $companyForms = []; //array( CompanyForms )
+    public $companyForms = [];
 
     /**
      * @var BusinessLineDTO[]
      */
-    public $businessLines = [];  //array( undefined )
+    public $businessLines = [];
 
     /**
      * @var LanguagesDTO[]
      */
-    public $languages = [];  //array( undefined )
+    public $languages = [];
 
     /**
-     * @var RegistedOfficeDTO[]
+     * @var RegisteredOfficeDTO[]
      */
-    public $registedOffices = []; //array( RegistedOffices )
+    public $registeredOffices = [];
 
     /**
      * @var ContactDetailDTO[]
      */
-    public $contactDetails = []; //array( ContactDetails )
+    public $contactDetails = [];
 
     /**
      * @var RegisteredEntryDTO[]
      */
-    public $registeredEntries = []; //array( RegisteredEntries )
-
+    public $registeredEntries = [];
 
     /**
      * @return LiquidationDTO[]
@@ -125,11 +124,11 @@ class BusinessIdResponse implements ApiResponseInterface
     }
 
     /**
-     * @param AuxiliaryNameDTO[] $auxiliaryNames
+     * @param AuxiliaryNameDTO $auxiliaryNames
      */
-    public function setAuxiliaryNames(array $auxiliaryNames)
+    public function setAuxiliaryNames(AuxiliaryNameDTO $auxiliaryNames)
     {
-        $this->auxiliaryNames = $auxiliaryNames;
+        $this->auxiliaryNames[] = $auxiliaryNames;
     }
 
     /**
@@ -193,23 +192,23 @@ class BusinessIdResponse implements ApiResponseInterface
      */
     public function setLanguages(LanguagesDTO $languages)
     {
-        $this->languages = $languages;
+        $this->languages[] = $languages;
     }
 
     /**
-     * @return RegistedOfficeDTO[]
+     * @return RegisteredOfficeDTO[]
      */
-    public function getRegistedOffices(): array
+    public function getRegisteredOffices(): array
     {
-        return $this->registedOffices;
+        return $this->registeredOffices;
     }
 
     /**
-     * @param RegistedOfficeDTO $registedOffices
+     * @param RegisteredOfficeDTO $registeredOffices
      */
-    public function setRegistedOffices(RegistedOfficeDTO $registedOffices)
+    public function setRegisteredOffices(RegisteredOfficeDTO $registeredOffices)
     {
-        $this->registedOffices = $registedOffices;
+        $this->registeredOffices = $registeredOffices;
     }
 
     /**
@@ -237,13 +236,16 @@ class BusinessIdResponse implements ApiResponseInterface
     }
 
     /**
-     * @param RegisteredEntryDTO[] $registeredEntries
+     * @param RegisteredEntryDTO $registeredEntries
      */
-    public function setRegisteredEntries(array $registeredEntries)
+    public function setRegisteredEntries(RegisteredEntryDTO $registeredEntries)
     {
-        $this->registeredEntries = $registeredEntries;
+        $this->registeredEntries[] = $registeredEntries;
     }
 
+    /**
+     * @return AddressDTO|null
+     */
     public function getLastAddress(): ?AddressDTO
     {
         $array = $this->getAddresses();
