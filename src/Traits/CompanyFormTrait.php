@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait CompanyFormTrait
+ * @package Isolta\OpenData\Traits
  */
 trait CompanyFormTrait
 {
@@ -24,7 +24,7 @@ trait CompanyFormTrait
     }
 
     /**
-     * @param string $companyForm
+     * @param string|null $companyForm
      * @return $this
      */
     public function setCompanyForm(?string $companyForm): self

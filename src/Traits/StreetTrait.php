@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait CareOfTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait StreetTrait
+ * @package Isolta\OpenData\Traits
  */
 trait StreetTrait
 {
@@ -24,7 +24,7 @@ trait StreetTrait
     }
 
     /**
-     * @param string $street
+     * @param string|null $street
      * @return $this
      */
     public function setStreet(?string $street): self

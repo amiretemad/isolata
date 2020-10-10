@@ -3,7 +3,10 @@
 
 namespace Isolta\OpenData\Traits;
 
-
+/**
+ * Trait TypeTrait
+ * @package Isolta\OpenData\Traits
+ */
 trait TypeTrait
 {
 

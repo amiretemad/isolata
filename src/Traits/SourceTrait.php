@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait SourceTrait
+ * @package Isolta\OpenData\Traits
  */
 trait SourceTrait
 {
@@ -24,7 +24,7 @@ trait SourceTrait
     }
 
     /**
-     * @param int $source
+     * @param int|null $source
      * @return $this
      */
     public function setSource(?int $source) : self

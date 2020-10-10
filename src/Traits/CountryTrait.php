@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait CountryTrait
+ * @package Isolta\OpenData\Traits
  */
 trait CountryTrait
 {
@@ -24,7 +24,7 @@ trait CountryTrait
     }
 
     /**
-     * @param string $country
+     * @param string|null $country
      * @return $this
      */
     public function setCountry(?string $country): self

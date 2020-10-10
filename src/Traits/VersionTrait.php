@@ -4,8 +4,8 @@
 namespace Isolta\OpenData\Traits;
 
 /**
- * Trait OrderTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait VersionTrait
+ * @package Isolta\OpenData\Traits
  */
 trait VersionTrait
 {

@@ -6,8 +6,8 @@ namespace Isolta\OpenData\Traits;
 use DateTime;
 
 /**
- * Trait StatusTrait
- * @package Isolta\OpenData\Response\Traits
+ * Trait StatusDateTrait
+ * @package Isolta\OpenData\Traits
  */
 trait StatusDateTrait
 {
@@ -26,7 +26,7 @@ trait StatusDateTrait
     }
 
     /**
-     * @param string $statusDate
+     * @param string|null $statusDate
      * @return $this
      */
     public function setStatusDate(?string $statusDate): self
