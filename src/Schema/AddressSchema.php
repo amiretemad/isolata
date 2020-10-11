@@ -15,4 +15,10 @@ class AddressSchema
         CityTrait,
         PostCodeTrait;
 
+
+    public function __toString()
+    {
+        return sprintf('Street: %s , City: %s , PostCode: %s', $this->getStreet(), $this->getCity(), $this->getPostCode());
+        // TODO: Implement __toString() method.
+    }
 }
