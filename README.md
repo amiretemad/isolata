@@ -6,7 +6,7 @@ How to install package?
 composer require isolta/opendata
 ```
 
-How to use Business Service ?
+How to use Business Service in your application ?
 
 ```php
 <?php
